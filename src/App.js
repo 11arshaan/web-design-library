@@ -1,26 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
-import { Bars } from "./components/Graphics/Graphics";
+import { Canvas2D } from './components/canvas/Canvas';
+import Sketch1 from './components/canvas/ClickCircle';
 
 function App() {
+
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        
+      <Sketch1 id="c"  setup={{fullscreen: true, click: true}} style={{}} />
       </header>
-      <Bars />
+     
     </div> 
   );
 }
