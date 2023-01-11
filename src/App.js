@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import { Bars } from "./components/Graphics/Graphics";
+
 
 function App() {
   return (
@@ -20,7 +20,7 @@ function App() {
         </a>
         
       </header>
-      <Bars />
+      
     </div> 
   );
 }
