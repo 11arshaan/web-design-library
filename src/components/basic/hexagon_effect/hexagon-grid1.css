@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    min-height: 100vh
+}
+
+.hexagon1 {
+    position: relative;
+    width: 60px;
+    height: 100px;
+    background: #000;
+}
+
+
+/* Hexagon Single */
+.hexagon1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -30px;
+    width: 0px;
+    height: 0px;
+    border-right: 30px solid #000;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+}
+
+.hexagon1::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -30px;
+    width: 0px;
+    height: 0px;
+    border-left: 30px solid #000;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent; 
+}
+
+
+.hexagon2 {
+    position: relative;
+    width: 180px;
+    height: 100px;
+    background: #111;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    
+}
+
+
+.row {
+    display: inline-flex;
+    margin-top: -32px;
+    margin-left: -50px;
+}
+
+.row:nth-child(even) {
+    margin-left: 1px;
+}
+
+.container { 
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    /* animation: hue-rotation 4s linear infinite;  */
+
+}
+
+@keyframes hue-rotation {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+
+
+
+
+
+
+/* Hexagon Grid */
+.hex-grid__list {
+    --amount: 5;
+    display: grid;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    grid-template-columns: repeat(var(--amount), 1fr 2fr) 1fr;
+}
+
+.hex-grid__item {
+    position: relative;
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 2;
+    height: 0;
+    padding-bottom: 100%;
+}
+
+.hex-grid__content {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+}

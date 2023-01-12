@@ -1,5 +1,5 @@
 import './App.css';
-import { Canvas2D } from './components/canvas/Canvas';
+
 import Sketch1 from './components/canvas/ClickCircle';
 
 function App() {
