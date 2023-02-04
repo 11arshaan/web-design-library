@@ -1,15 +1,16 @@
 import './App.css';
-
-import Sketch1 from './components/canvas/ClickCircle';
+import Hexagon_Grid_Float from './components/basic/graphics/Hexagon_Grid/Hexagon_Grid_Float';
 
 function App() {
-
+  
 
   return (
     <div className="App">
       <header className="App-header">
-      <Sketch1 id="c"  setup={{fullscreen: true, click: true}} style={{}} />
+      <h1>Woo</h1>
+      <Hexagon_Grid_Float size={25} margin={2} count={256} color1={"#00ffa6"} />
       </header>
+      
      
     </div> 
   );
