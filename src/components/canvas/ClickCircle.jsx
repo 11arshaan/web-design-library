@@ -4,7 +4,7 @@ import React, { useState, useRef, useEffect } from "react";
 // 
 
 
-export default function Sketch1(props) {
+export default function ClickCircle(props) {
   const { setup, style, id } = props;
   const [mouse, setMouse] = useState({ x: null, y: null });
   const canvasRef = useRef(null)

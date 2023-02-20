@@ -1,6 +1,10 @@
 import styles from "./Hexagon_Grid_Float.module.css";
 import styled from "styled-components";
 
+{/* <Hexagon_Grid_Float size={25} margin={2} count={256} color1={"#00ffa6"} /> */}
+
+
+
 const Hexagon_Grid = styled.div`
   font-size: 0;
   width: 100%;
@@ -41,7 +45,6 @@ export default function Hexagon_Grid_Float({
   margin = 4,
 }) {
   const factor = 1.732 * size + 4 * margin - 1;
-  console.log(factor);
   const factor_string = `${factor}px`;
 
   const hexagon_array = [];

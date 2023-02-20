@@ -1,4 +1,4 @@
-import styles from "./SVGRoute.module.css";
+import styles from "./SVGRoute.module.scss";
 import { SpinningLoadingIcon1, SpinningLoadingIcon2 } from "../components/svg/svg-loading-icons/LoadingIconSVG";
 
 export function SVGRoute(props) {
