@@ -1,0 +1,132 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #1a2229 #111317;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #111317;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #1a2229;
+  border-radius: 10px;
+  border: 3px solid #1a2229;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --bg-gradient1: linear-gradient(
+    146.46deg,
+    #0a090d -199.99%,
+    #182127 -73.95%,
+    #1f2a31 -59.53%,
+    #242e35 -41.69%,
+    #26353d -40.25%,
+    #182026 3.88%,
+    #0a090d 102.06%
+  );
+  --bg-gradient2: linear-gradient(
+    168.72deg,
+    #192728 -52.18%,
+    #182326 0.23%,
+    #0b0b0f 109.06%
+  );
+  --bg-gradient3: linear-gradient(
+      349.08deg,
+      #0a090d -7.85%,
+      #182127 54.51%,
+      #1f2a31 71.42%,
+      #26353d 85.58%,
+      #242e35 102.28%,
+      #182026 117.72%,
+      #0a090d 178.34%
+    ),
+    #15141b;
+
+  background: var(--bg-gradient2);
+  min-height: 100vh;
+  min-width: 100vw;
+  overflow-x: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.container {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: max-content;
+  grid-row-gap: 10rem;
+  margin: 5rem auto;
+  width: 95%;
+}
+
+.component-card {
+  cursor: pointer;
+  width: min(30vw, 45rem);
+  height: 32rem;
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  box-shadow: 0px 8px 4px rgba(0, 0, 0, 0.25),
+    inset -1px -1px 2px rgba(105, 105, 105, 0.25),
+    inset 1px 1px 2px rgba(105, 105, 105, 0.12);
+  transform: scale(1);
+  transition: all 0.5s;
+
+  &:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+    border: 1px solid #4f5b64;
+  }
+}
+
+.component-modal {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(14, 223, 14, 0.59);
+  position: fixed;
+  display: grid;
+  grid-template-columns: min(40%, 25.6rem) 1fr;
+  justify-items: center;
+
+  &__card {
+    margin: auto auto;
+    grid-column: 2;
+    width: 85%;
+    height: 80%;
+    border: 1px solid #1c2026;
+    background-color: #111317;
+    border-radius: 1rem;
+  }
+}

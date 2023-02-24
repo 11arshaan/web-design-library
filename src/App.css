@@ -1,12 +1,5 @@
-.App-header {
-  
-  background-color: var(--bg);
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.app {
+  display: grid;
+  grid-template-columns: min(40%, 25.6rem) 1fr;
 }
 

@@ -1,20 +1,17 @@
 import './App.css';
 import { Link } from 'react-router-dom';
-
-
+import LabNavbar from './components/basic/navigation/LabNavbar/LabNavbar';
+import { Outlet } from 'react-router-dom';
+import ComponentModal from './components/basic/utility/ComponentCard/ComponentModal';
 
 function App() {
 
 
   return (
-    <div className="App">
-      <header className="App-header">
-      <h1>Woo</h1>
-      <Link to="three">three</Link>
-      <Link to="d3">D3</Link>
-      <Link to="svg">SVG</Link>
-
-      </header>
+    <div className="app">
+      <LabNavbar />
+      <Outlet />
+      <ComponentModal />
       
      
     </div> 
