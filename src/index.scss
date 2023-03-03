@@ -112,6 +112,7 @@ code {
 }
 
 .component-modal {
+ 
   width: 100vw;
   height: 100vh;
   background: rgba(14, 223, 14, 0.59);
@@ -119,6 +120,7 @@ code {
   display: grid;
   grid-template-columns: min(40%, 25.6rem) 1fr;
   justify-items: center;
+  display: none;
 
   &__card {
     margin: auto auto;
