@@ -1,26 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
-import { Bars } from "./components/Graphics/Graphics";
+import { Link } from 'react-router-dom';
+import LabNavbar from './components/basic/navigation/LabNavbar/LabNavbar';
+import { Outlet } from 'react-router-dom';
+import ComponentModal from './components/basic/utility/ComponentModal/ComponentModal';
 
 function App() {
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        
-      </header>
-      <Bars />
+    <div className="app">
+      <LabNavbar />
+      <Outlet />
+      <ComponentModal />
+      
+     
     </div> 
   );
 }
