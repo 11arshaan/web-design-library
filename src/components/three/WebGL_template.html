@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <title>Real-Time 3D Graphics with WebGL2</title>
+
+    <style type="text/css">
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        background: #000;
+      }
+
+      canvas {
+        border: 1px solid white;
+      }
+    </style>
+
+    <script type="text/javascript">
+      function init() {
+        let canvas = document.querySelector("canvas");
+        let gl = canvas.getContext("webgl2");
+        canvas.style.borderColor = "crimson";
+        canvas.style.borderRadius = ".5rem";
+
+        
+      }
+
+      window.onload = init;
+    </script>
+  </head>
+
+  <body>
+    <canvas id="canvas" width="800" height="600"> web-gl required </canvas>
+  </body>
+</html>
