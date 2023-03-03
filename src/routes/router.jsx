@@ -15,7 +15,7 @@ import UtilityRoute from "./UtilityRoute";
 
 const router = createBrowserRouter([
   {
-    path: "/web-design-library",
+    path: "/",
     element: <App />,
     errorElement: <ErrorRoute />,
     children: [
