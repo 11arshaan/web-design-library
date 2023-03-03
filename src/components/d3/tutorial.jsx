@@ -1,5 +1,5 @@
-import { useState, useEffect, useRef } from "react";
-import styles from "./tutorial.module.css";
+import { useEffect, useRef } from "react";
+
 import * as d3 from "d3";
 
 export default function Tutorial() {
@@ -7,8 +7,8 @@ export default function Tutorial() {
 
   useEffect(() => {
     const w = d3.select(domRef.current);
-    const p = w.append('h1').text("Hoo").style("color", "lime")
-    console.log(w);
+    const p = w.append("h1").text("Hoo").style("color", "lime");
+    console.log(w, p);
     console.log(domRef.current);
   }, []);
 

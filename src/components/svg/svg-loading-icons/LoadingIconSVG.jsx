@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { keyframes } from "styled-components";
-import { styles } from "./LoadingIconSVG.module.css";
+
 
 function Circle({ color = "tomato", className = "", strokeWidth = 3 }) {
   return (
